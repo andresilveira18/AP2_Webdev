@@ -1,0 +1,90 @@
+
+
+
+/* General Styles */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    min-height: 100vh;
+    background-color: black;
+    font-family: 'Nunito';
+    color: white;
+}
+
+#header{
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.container{    
+    display: grid; 
+    grid-template-columns: repeat(6,1fr);
+    row-gap: 0.5em; 
+    column-gap: 0.2em; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    margin-bottom: 1rem ;
+}
+
+.jogador{
+    width: 100%; 
+    border: 2px solid black; 
+    border-radius: 5px 5px 0px 0px; 
+    margin: auto;
+}
+
+.names{
+    font-size: 0.8rem;
+    text-align: center;
+    font-family: 'Nunito Sans';
+    margin: 0.5em 0px;
+}
+
+#elenco_feminino{
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+#elenco_masculino{
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 1.5rem 2rem;
+}
+
+.container {
+    display: grid;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+

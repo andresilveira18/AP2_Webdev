@@ -1,0 +1,51 @@
+
+/* General Styles */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    min-height: 100vh;
+    background-color: black;
+    font-family: 'Nunito';
+    color: white;
+}
+
+#principal{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.image{
+    width: fit-content;
+    margin: 0 1rem;
+}
+
+#link_index{
+    display: block;
+    margin: 1.5rem 0;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.description{
+    margin: 1rem 0;
+}
+
+@media (max-width: 768px){
+    #principal{
+        flex-direction: column;
+    }
+
+    .description{
+        margin: 2rem ;
+        text-align: center;
+    }
+}
